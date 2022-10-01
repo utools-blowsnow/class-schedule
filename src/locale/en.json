@@ -1,0 +1,139 @@
+{
+    "add": "Add",
+    "base": {
+        "day": "Day",
+        "month": "Month",
+        "week": "Week",
+        "monthList": {
+            "0": "Jan",
+            "1": "Feb",
+            "2": "Mar",
+            "3": "Apr",
+            "4": "May",
+            "5": "Jun",
+            "6": "Jul",
+            "7": "Aug",
+            "8": "Sep",
+            "9": "Oct",
+            "10": "Nov",
+            "11": "Dec"
+        },
+        "selecter": {
+            "placeHolder": "Please choose"
+        },
+        "weekList": {
+            "0": "Su",
+            "1": "Mo",
+            "2": "Tu",
+            "3": "We",
+            "4": "Th",
+            "5": "Fr",
+            "6": "Sa"
+        }
+    },
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "editCourse": {
+        "base": {
+            "color": "Color",
+            "courseName": "Course Title",
+            "deleteCourse": "Delete course",
+            "error": {
+                "noName": "*Please enter the course name"
+            },
+            "title": "Basic information"
+        },
+        "otherInfo": {
+            "place": "Place",
+            "teacher": "Teacher",
+            "title": "Other information"
+        },
+        "selectDay": {
+            "error": {
+                "noDay": "*Please select a week"
+            },
+            "title": "Select week",
+            "weekList": {
+                "0": "Sun",
+                "1": "Mon",
+                "2": "Tues",
+                "3": "Wed",
+                "4": "Thur",
+                "5": "Fri",
+                "6": "Sat"
+            }
+        },
+        "selectSection": {
+            "endSection": "End session",
+            "error": {
+                "noEndSection": "*Please enter the end session",
+                "noSection": "*Please enter the section",
+                "noSectionRange": "*Please enter the correct section range",
+                "noStartSection": "*Please enter the starting section"
+            },
+            "startSection": "Start session",
+            "title": "Select a session"
+        },
+        "selectWeek": {
+            "error": {
+                "noWeek": "*Please select week"
+            },
+            "title": "Select week"
+        },
+        "timeAndLocation": {
+            "addTime": "Add time period",
+            "error": {
+                "noTime": "*Please add time period"
+            },
+            "section": "Section {section}",
+            "title": "Time and place",
+            "weekLength": "Total {length}weeks"
+        }
+    },
+    "editTime": {
+        "afternoon": "Afternoon",
+        "morning": "Morning",
+        "section": "Section {index}",
+        "title": "Edit time"
+    },
+    "notice": {
+        "end": {
+            "body": "{course}\nEnds in {time} minutes",
+            "title": "Reminder after class ⏰"
+        },
+        "start": {
+            "body": "{course}\nStarts in {time} minutes, at {place}",
+            "title": "Class reminder ⏰"
+        },
+        "title": "reminder settings",
+        "noNotice": "Do not remind",
+        "doNotice": "{time} minutes ahead"
+    },
+    "setting": {
+        "base": {
+            "color": "Theme",
+            "lang": "Language",
+            "title": "Basic Settings"
+        },
+        "table": {
+            "section": "Class schedule",
+            "sectionAft": "Afternoon",
+            "sectionMor": "Morning",
+            "sectionTime": "Class time",
+            "sectionTip": "After modification, some courses may display abnormally",
+            "startTime": "Commencement time",
+            "title": "Schedule setting",
+            "weekLength": "Total number of weeks in the semester"
+        },
+        "title": "Set Up"
+    },
+    "today": {
+        "date": "{month}month{day}day",
+        "fromEnd": "From the end",
+        "fromStart": "From start",
+        "minutes": "Min",
+        "noCourse": "No classes on the day!",
+        "title": "TODAY",
+        "tommrowTitle": "TOMORROW"
+    }
+}

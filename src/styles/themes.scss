@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --color-base: theme('colors.white');
+    --color-text-base: theme('colors.black');
+    --color-off-base: theme('colors.gray.50');
+    --color-text-muted: theme('colors.gray.600');
+    --color-text-muted-hover: theme('colors.gray.500');
+    --color-primary: theme('colors.blue.800');
+    --color-secondary: theme('colors.blue.300');
+
+    --color-success: rgba(24, 160, 88, 0.16);
+    --color-success-text: #18a058;
+    --color-warning: rgba(240, 160, 32, 0.16);
+    --color-warning-text: #f0a020;
+    --color-danger: rgba(217, 67, 85, 0.16);
+    --color-danger-text: #d94355;
+}
+
+.theme-light {
+    --color-base: theme('colors.white');
+    --color-text-base: theme('colors.black');
+    --color-off-base: theme('colors.gray.50');
+    --color-text-muted: theme('colors.gray.600');
+    --color-text-muted-hover: theme('colors.gray.500');
+    --color-primary: theme('colors.blue.800');
+    --color-secondary: theme('colors.blue.300');
+}
+
+.theme-dark {
+    --color-base: theme('colors.gray.900');
+    --color-text-base: theme('colors.gray.100');
+    --color-off-base: theme('colors.gray.800');
+    --color-text-muted: theme('colors.gray.300');
+    --color-text-muted-hover: theme('colors.gray.200');
+    --color-primary: theme('colors.blue.500');
+    --color-secondary: theme('colors.blue.200');
+}
+.theme-solar {
+    --color-base: theme('colors.rose.50');
+    --color-text-base: theme('colors.gray.800');
+    --color-off-base: theme('colors.rose.200');
+    --color-text-muted: theme('colors.gray.600');
+    --color-text-muted-hover: theme('colors.rose.500');
+    --color-primary: theme('colors.amber.700');
+    --color-secondary: theme('colors.amber.400');
+}
+
+.theme-evergreen {
+    --color-base: theme('colors.green.900');
+    --color-text-base: theme('colors.green.100');
+    --color-off-base: theme('colors.green.800');
+    --color-text-muted: theme('colors.green.200');
+    --color-text-muted-hover: theme('colors.green.500');
+    --color-primary: theme('colors.lime.500');
+    --color-secondary: theme('colors.lime.50');
+}
+
+.theme-lightgreen {
+    --color-base: theme('colors.green.50');
+    --color-text-base: #1f2430;
+    --color-off-base: #82eab5;
+    --color-text-muted: #b3b4b8;
+    --color-text-muted-hover: #8da4da;
+    --color-primary: #202230;
+    --color-secondary: theme('colors.emerald.300');
+}
+
+.theme-zinc {
+    --color-base: rgb(64, 67, 86);
+    --color-text-base: #ffffff;
+    --color-off-base: rgb(68, 71, 90);
+    --color-text-muted: #696f7f;
+    --color-text-muted-hover: #ff6897;
+    --color-primary: #b7b9c6;
+    --color-secondary: #383b4a;
+}

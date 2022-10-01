@@ -1,0 +1,34 @@
+{
+    "en": {
+        "short": {
+            "month": "short",
+            "day": "numeric",
+            "weekday": "long"
+        },
+        "long": {
+            "year": "numeric",
+            "month": "long",
+            "day": "numeric",
+            "weekday": "long",
+            "hour": "numeric",
+            "minute": "numeric",
+            "hour12": true
+        }
+    },
+    "zh": {
+        "short": {
+            "month": "short",
+            "day": "numeric",
+            "weekday": "long"
+        },
+        "long": {
+            "year": "numeric",
+            "month": "long",
+            "day": "numeric",
+            "weekday": "long",
+            "hour": "numeric",
+            "minute": "numeric",
+            "hour12": true
+        }
+    }
+}

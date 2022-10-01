@@ -1,0 +1,21 @@
+@import 'themes.scss';
+@import 'animation.scss';
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+@mixin text-overflow($line) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
