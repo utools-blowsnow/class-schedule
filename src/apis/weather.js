@@ -16,3 +16,4 @@
 //             return res
 //         })
 // }
+//# sourceMappingURL=weather.js.map

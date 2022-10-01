@@ -7,6 +7,10 @@ import {
     courseDuractionModel
 } from '../types/course'
 import { klona } from 'klona'
+import {utoolsStorage} from './utoolsStorage'
+
+const utools = (window as any).utools
+console.log("load Storage ",utools,utoolsStorage);
 
 export const useCourseStore = defineStore({
     id: 'course',
@@ -539,7 +543,7 @@ export const useCourseStore = defineStore({
         }
     },
     persist: {
-        storage: window.utools ? UtoolsStorage : localStorage,
+        storage: utools ? utoolsStorage : localStorage,
         paths: [
             'totalWeeks',
             'currentWeek',
@@ -553,38 +557,4 @@ export const useCourseStore = defineStore({
     }
 })
 
-class UtoolsStorage implements Storage{
-    [name: string]: any;
 
-    readonly length: number;
-
-    clear(): void {
-        utools.db.promises.allDocs().then(docs => {
-            for (const doc of docs) {
-                this.removeItem(doc.id);
-            }
-        })
-    }
-
-    getItem(key: string): string | null {
-        let doc = utools.db.get(key);
-        if (doc) return doc.data;
-        return null;
-    }
-
-    key(index: number): string | null {
-        return null;
-    }
-
-    removeItem(key: string): void {
-        utools.db.remove(key);
-    }
-
-    setItem(key: string, value: string): void {
-        utools.db.put({
-            _id: key,
-            data: value
-        })
-    }
-
-}

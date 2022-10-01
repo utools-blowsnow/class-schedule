@@ -1,6 +1,9 @@
 import { defineStore } from 'pinia';
 import { klona } from 'klona';
 import setList from '@/utils/notice';
+import { utoolsStorage } from './utoolsStorage';
+const utools = window.utools;
+console.log("load Storage ", utools, utoolsStorage);
 export const useAppStore = defineStore('app', {
     state: () => {
         return {
@@ -33,7 +36,8 @@ export const useAppStore = defineStore('app', {
         }
     },
     persist: {
-        storage: localStorage,
+        storage: utools ? utoolsStorage : localStorage,
         paths: ['lang', 'primaryColor', 'startNoticeTime', 'endNoticeTime']
     }
 });
+//# sourceMappingURL=app.js.map

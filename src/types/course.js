@@ -21,3 +21,4 @@ export var courseColorKey;
     courseColorKey["purple"] = "purple";
     courseColorKey["pink"] = "pink";
 })(courseColorKey || (courseColorKey = {}));
+//# sourceMappingURL=course.js.map

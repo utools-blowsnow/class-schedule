@@ -1,4 +1,3 @@
-import { useWebNotification } from '@vueuse/core';
 import { useAppStore } from '@/store/app';
 import { klona } from 'klona';
 let timer;
@@ -10,6 +9,7 @@ function setList() {
     let messageList = klona(useAppStore().getMessageList);
     messageList.sort((a, b) => a.date.getTime() - b.date.getTime());
     if (messageList.length > 0) {
+        console.log('设置消息列表', messageList);
         notice(messageList);
     }
 }
@@ -37,16 +37,7 @@ function notice(list) {
     // }
 }
 function showNotice(title, body) {
-    const { isSupported, notification, show, close, onClick, onShow, onError, onClose } = useWebNotification({
-        title,
-        body,
-        dir: 'auto',
-        lang: 'en',
-        renotify: true,
-        tag: 'test'
-    });
-    if (isSupported) {
-        show();
-    }
+    window.utools.showNotification(`[ ${title} ] ${body}`);
 }
 export default setList;
+//# sourceMappingURL=notice.js.map

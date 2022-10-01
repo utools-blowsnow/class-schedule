@@ -1,5 +1,8 @@
 import { defineStore } from 'pinia';
 import { klona } from 'klona';
+import { utoolsStorage } from './utoolsStorage';
+const utools = window.utools;
+console.log("load Storage ", utools, utoolsStorage);
 export const useCourseStore = defineStore({
     id: 'course',
     state: () => {
@@ -411,7 +414,7 @@ export const useCourseStore = defineStore({
         }
     },
     persist: {
-        storage: localStorage,
+        storage: utools ? utoolsStorage : localStorage,
         paths: [
             'totalWeeks',
             'currentWeek',
@@ -424,3 +427,4 @@ export const useCourseStore = defineStore({
         ]
     }
 });
+//# sourceMappingURL=course.js.map

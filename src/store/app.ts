@@ -2,6 +2,10 @@ import { defineStore } from 'pinia'
 import { RoMessageList, RoCourseDay } from '@/types/course'
 import { klona } from 'klona'
 import setList from '@/utils/notice'
+import {utoolsStorage} from './utoolsStorage'
+
+const utools = (window as any).utools
+console.log("load Storage ",utools,utoolsStorage);
 
 export const useAppStore = defineStore('app', {
     state: () => {
@@ -39,7 +43,7 @@ export const useAppStore = defineStore('app', {
         }
     },
     persist: {
-        storage: localStorage,
+        storage: utools ? utoolsStorage : localStorage,
         paths: ['lang', 'primaryColor', 'startNoticeTime', 'endNoticeTime']
     }
 })

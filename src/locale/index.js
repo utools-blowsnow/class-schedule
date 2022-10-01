@@ -21,3 +21,4 @@ export function installI18n(app) {
     }
     return i18n;
 }
+//# sourceMappingURL=index.js.map

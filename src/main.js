@@ -24,3 +24,4 @@ const appStore = useAppStore();
 appStore.$subscribe((_, state) => {
     i18n.global.locale = state.lang;
 });
+//# sourceMappingURL=main.js.map

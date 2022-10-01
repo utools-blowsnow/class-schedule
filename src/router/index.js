@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import index from '../views/Home.vue';
 const routes = [
     {
@@ -29,3 +29,4 @@ router.afterEach((to, from) => {
     to.meta.transitionName = toDepth < fromDepth ? 'zoom-out' : 'zoom-in';
 });
 export default router;
+//# sourceMappingURL=index.js.map
